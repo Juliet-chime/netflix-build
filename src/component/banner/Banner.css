@@ -3,6 +3,7 @@
     position: relative;
     object-fit: contain;
     color: white;
+
 }
 
 .banner_contents {
@@ -32,7 +33,6 @@
     background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
 }
 
-.banner_button {}
 
 .banner_btn {
     cursor: pointer;
@@ -50,4 +50,10 @@
     color: #000;
     background-color: #e6e6e6;
     transition: all 0.2s;
+}
+
+@media screen and (max-width: 992px) {
+    .banner_description {
+        width: 100%;
+    }
 }
