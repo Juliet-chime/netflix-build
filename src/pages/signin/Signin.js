@@ -21,7 +21,7 @@ const Signin = () => {
            createUserWithEmailAndPassword(auth,email,password).then((authUser)=>{
             if(authUser){
                 setEmail(false)
-                navigate('/')
+                 navigate('/')
             }
           
            }).catch((e)=>{
@@ -36,7 +36,7 @@ const Signin = () => {
         signInWithEmailAndPassword(auth,email,password).then((authUser)=>{
             if(authUser){
                 setLoading(false)
-                navigate('/')
+                 navigate('/')
             }
            }).catch((e)=>{
             setLoading(false)

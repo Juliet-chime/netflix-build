@@ -1,15 +1,14 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
 import {Navigate,useLocation} from "react-router-dom";
-import { selectUser } from '../../features/user/userSlice';
+
 
 const ProtectedRoute = ({children}) => {
 
-  const user = useSelector(selectUser)
-
     let location = useLocation()
+
+  const token =  localStorage.getItem('token')
     
-    if (user){
+    if (token){
       return children
     }
 

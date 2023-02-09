@@ -8,6 +8,7 @@ import { auth } from './firebase';
 import { useDispatch } from 'react-redux';
 import { login, logout } from './features/user/userSlice';
 import Profile from './pages/profile/Profile';
+import VideoTest from './component/VideoTest';
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
           }
         />
         <Route path='/login' element={<Signin/>}/>
+        {/* <Route path='/test' element={<VideoTest/>}/> */}
       </Routes>
    
     </div>

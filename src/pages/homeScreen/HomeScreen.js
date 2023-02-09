@@ -15,12 +15,11 @@ const HomeScreen = () => {
       fetchurl={requests.fetchTrending}
        isLargeRow={true}
       />
-       <Row 
+        <Row 
       title='TOP RATED'
       fetchurl={requests.fetchTopRated}
-      
       />
-       <Row 
+      <Row 
       title='POPULAR'
       fetchurl={requests.fetchPopuplar}
        isLargeRow={true}
